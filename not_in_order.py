@@ -10,7 +10,7 @@ as in the same sequence sorted ascending - [1, 1, 1, 2, 3, 4].
 def not_order(data: list[int]) -> int:
     sort_list = [char for ind, char in zip(data, sorted(data)) if ind != char]
     res = [sort_list.count(x) for x in sort_list]
-    return sum(res)
+    return len(res)
 
 
 print("Example:")
